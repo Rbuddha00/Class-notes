@@ -1,0 +1,11 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="UAT TEST" verbose="1" >
+  <test name="TestNGxScripts2" >
+    <classes>
+        <class name="com.qa.testNGScripts.Annotation"/>
+         <class name="com.qa.testNGScripts.RediffTestNG"/>
+    </classes>
+  </test>  
+  
+</suite>

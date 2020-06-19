@@ -1,0 +1,21 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UAT TEST" verbose="1" parallel="tests" thread-count="2" >
+  <test name="demoprallelTests1" >
+  <parameter name = "UserName" value = "Username1"/>
+  <parameter name = "Password" value = "Password1"/>
+    <classes>
+        <class name="com.qa.testNGScripts.demoprallelTestNG"/>
+      
+    </classes>
+  </test>  
+  
+   <test name="demoprallelTests2" >
+  <parameter name = "UserName" value = "Username2"/>
+  <parameter name = "Password" value = "Password2"/>
+    <classes>
+        <class name="com.qa.testNGScripts.demoprallelTestNG"/>
+      
+    </classes>
+  </test>  
+  
+</suite>

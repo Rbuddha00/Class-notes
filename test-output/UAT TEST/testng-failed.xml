@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [UAT TEST]" parallel="tests">
+  <test thread-count="2" name="demoprallelTests2(failed)" parallel="tests">
+    <parameter name="UserName" value="Username2"/>
+    <parameter name="Password" value="Password2"/>
+    <classes>
+      <class name="com.qa.testNGScripts.demoprallelTestNG">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qa.testNGScripts.demoprallelTestNG -->
+    </classes>
+  </test> <!-- demoprallelTests2(failed) -->
+  <test thread-count="2" name="demoprallelTests1(failed)" parallel="tests">
+    <parameter name="UserName" value="Username1"/>
+    <parameter name="Password" value="Password1"/>
+    <classes>
+      <class name="com.qa.testNGScripts.demoprallelTestNG">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qa.testNGScripts.demoprallelTestNG -->
+    </classes>
+  </test> <!-- demoprallelTests1(failed) -->
+</suite> <!-- Failed suite [UAT TEST] -->
