@@ -48,5 +48,9 @@ public class Annotation {
 	 }
 	 
 	 
+	 @Test (priority= 2)
+	 public void lointo() {
+		 System.out.println(" print this priority 2");
+	 }
 	 
 }
